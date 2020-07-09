@@ -1,5 +1,6 @@
 package com.example.cultivation_game
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -31,6 +32,10 @@ class MainActivity : AppCompatActivity() {
                 grow_tomato_View.setImageResource(R.drawable.flower_seichou1)
             grow_Image_num += 1
             if (grow_Image_num % 9 == 0)grow_Image_num=0
+        }
+        Next_Button.setOnClickListener {
+            val intent= Intent(application,SubActivity::class.java)
+            startActivity(intent)
         }
     }
 }
