@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">植物成長ゲーム</string>
+    <string name="layout_button">植物を成長させる</string>
+    <string name="grow_lv">Grow_Lv_1</string>
+</resources>
